@@ -1,0 +1,58 @@
+.container{
+    border: 2px solid black;
+    height: 50px;
+    padding: 50px;
+    margin: 30px;
+}
+.parentConRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+}
+.parentConCol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 4fr;
+    height: 30px;
+    justify-content: center;
+    /* grid-template-rows: 1fr 2fr 3fr 4fr; */
+    gap: 20px;
+    /* grid-template-columns: 1fr; */
+}
+.gridContainer > div{
+    display: grid;
+    justify-content: center;
+}
+.profileGridContainer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* height: 30px; */
+    /* justify-content: center; */
+    /* grid-template-rows: 1fr 2fr 3fr 4fr; */
+    gap: 10px;
+    /* grid-template-columns: 1fr; */
+}
+.gridItem{
+    align-self: center;
+    border: 2px solid red;
+    height: 200px;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.gridFlexItem{
+    border: 1px solid black;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+   
+}
