@@ -1,0 +1,27 @@
+.parentDiv{
+    border: 2px solid blue;
+    height: 1000px;
+    margin: 10px;
+    /* position: absolute; */
+}
+.childBox{
+    border: 2px solid red;
+    height: 30px;
+    margin: 10px;
+    /* position: relative */
+}
+.childOne{
+    position: sticky;
+    /* right: 100px; */
+    top: 100px;
+    /* left: 30px;
+    top: 10px; */
+    background-color: yellow;
+}
+.childTwo{
+    /* position: absolute; */
+
+    /* left: 20px;
+    top: 20px; */
+    background-color: beige;
+}
