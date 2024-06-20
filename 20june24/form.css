@@ -1,0 +1,24 @@
+.mainForm{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    /* align-items: center; */
+    border: 2px solid gray;
+    margin: 20px;
+    font-size: 20px;
+    background-color: azure;
+}
+.mainForm > div{
+    padding: 10px;
+}
+.head{
+    text-align: center;
+}
+.buttonDiv{
+    text-align: center;
+}
+.courseDiv{
+    margin-left: 20%;
+    gap: 50px;
+}

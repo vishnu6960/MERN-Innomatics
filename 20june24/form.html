@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Fields</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="head">
+        <h2>Innomatics Form</h2>
+    </div>
+    <form class="mainForm">
+        <div>
+            <label>Username</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="email">
+        </div>
+        <div>
+            <label>Password:</label>
+            <input type="password">
+        </div>
+        <div>
+            <label>Choose File:</label>
+            <input type="file">
+        </div>
+        <div>
+            <label>Date:</label>
+            <input type="date">
+        </div>
+        <div>
+            <label>Slot:</label>
+            <input type="time">
+        </div>
+        <div>
+            <label>Phone Number:</label>
+            <input type="tel">
+        </div>
+        <div>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male"><label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female"><label for="female">female</label>
+            <input type="radio" id="others" name="gender" value="others"><label for="others">Others</label>
+        </div>
+        <div>
+            <label for="">Address:</label>
+            <textarea name="address" id="address"></textarea>
+        </div>
+        <div>
+            <p>Course Selection:</p>
+            <div class="courseDiv">
+                <input type="checkbox"><label for="">MERN Stack</label><br>
+                <input type="checkbox"><label for="">Data Science</label><br>
+                <input type="checkbox"><label for="">Devops</label><br>
+                <input type="checkbox"><label for="">Gen AI</label><br>
+            </div>
+
+        </div>
+        <div>
+            <label for="country">Country:</label>
+            <select style="font-size: 15px; height: 25px; width: 100px;" name="country" id="country">
+                <option value="">India</option>
+                <option value="">England</option>
+                <option value="">China</option>
+                <option value="">Australia</option>
+                <option value="">USA</option>
+
+
+
+            </select>
+        </div>
+        <div class="buttonDiv">
+            <button style="font-size: 20px; background-color: green; border-radius: 5px; color: white;">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
