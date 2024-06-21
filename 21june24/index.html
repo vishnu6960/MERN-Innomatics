@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Layout</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 style="text-decoration: underline;">Header</h1>
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">Dashboard</a>
+                </li>
+                <li>
+                    <a href="">Menu</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="mainContainer">
+        <aside>
+            <h2 style="text-decoration: underline;">Side Bar</h2>
+            <p>This is a side bar</p>
+        </aside>
+        <main>
+            <!-- User Registration form -->
+            <section>
+                <h1 style="text-decoration: underline;">User Registration</h1>
+                <form class="mainForm">
+                    <!-- <h1>Fill this form</h1> -->
+                    <div>
+                        <label>Username</label><br>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Email:</label><br>
+                        <input type="email">
+                    </div>
+                    <div>
+                        <label>Password:</label><br>
+                        <input type="password">
+                    </div>
+                    <div>
+                        <label>Choose File:</label><br>
+                        <input type="file">
+                    </div>
+                    <div>
+                        <label>Date:</label><br>
+                        <input type="date">
+                    </div>
+                    <div>
+                        <label>Slot:</label><br>
+                        <input type="time">
+                    </div>
+                    <div>
+                        <label>Phone Number:</label><br>
+                        <input type="tel">
+                    </div>
+                    <div>
+                        <label>Gender:</label><br>
+                        <input type="radio" id="male" name="gender" value="male"><label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female"><label for="female">Female</label>
+                        <input type="radio" id="others" name="gender" value="others"><label for="others">Others</label>
+                    </div>
+                    <div>
+                        <label for="">Address:</label><br>
+                        <textarea name="address" id="address"></textarea>
+                    </div>
+                    <div>
+                        <p>Course Selection:</p>
+                        <div class="courseDiv">
+                            <input type="checkbox"><label for="">MERN Stack</label><br>
+                            <input type="checkbox"><label for="">Data Science</label><br>
+                            <input type="checkbox"><label for="">Devops</label><br>
+                            <input type="checkbox"><label for="">Gen AI</label><br>
+                        </div>
+            
+                    </div>
+                    <div>
+                        <label for="country">Country:</label>
+                        <select style="font-size: 15px; height: 25px; width: 100px;" name="country" id="country">
+                            <option value="">India</option>
+                            <option value="">England</option>
+                            <option value="">China</option>
+                            <option value="">Australia</option>
+                            <option value="">USA</option>
+            
+            
+            
+                        </select>
+                    </div>
+                    <!-- <div style="text-align: center;" class="buttonDiv">
+                        <button style="font-size: 20px; background-color: green; border-radius: 5px; color: white;">Submit</button>
+                    </div> -->  
+                </form>
+            </section>
+            <!-- Users Table -->
+            <section>
+                <h1 style="text-decoration: underline;">Table</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Vishnu</td>
+                            <td>21</td>
+                            <td>98989898989</td>
+                        </tr>
+                        <tr>
+                            <td>Hemanth</td>
+                            <td>32</td>
+                            <td>5258589895</td>
+                        </tr>
+                        <tr>
+                            <td>Usha</td>
+                            <td>21</td>
+                            <td>96969696</td>
+                        </tr>
+                        <tr>
+                            <td>Charan</td>
+                            <td>22</td>
+                            <td>9895258289</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <!-- Lists -->
+            <section>
+                <h1 style="text-decoration: underline;">Ordered Lists</h1>
+                <h3>MERN Road Map</h3>
+                <ol>
+                    
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>BOOTSTRAP</li>
+                    <li>JAVASCRIPT</li>
+                    <li>REACTJS</li>
+                    <li>NODEJS</li>
+                    <li>EXPRESSJS</li>
+                    <li>MONGODB</li>
+                </ol>
+            </section>
+            <section>
+                <h1 style="text-decoration: underline;">Grid Layout</h1>
+                <div class="gridContainer">
+                    <div class="gridItem">Grid1</div>
+                    <div class="gridItem">Grid2</div>
+                    <div class="gridItem">Grid3</div>
+                    <div class="gridItem">Grid4</div>
+                    <div class="gridItem">Grid5</div>
+                    <div class="gridItem">Grid6</div>
+    
+                </div>
+            </section>
+        </main>
+
+    </div>
+    <footer>
+        <h2>Footer</h2>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,88 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header, nav, main, aside, section, footer{
+    border: 1px solid black;
+    margin: 5px;
+}
+nav ul li{
+    display: inline;
+    margin: 5px;
+}
+header{
+    position: sticky;
+    top: 0;
+}
+ul > li > a{
+    color: white;
+}
+header, footer{
+    background-color: rgb(22, 22, 79);
+    color: white;
+    text-align: center;
+}
+.mainContainer{
+    display: flex;
+}
+aside{
+    width: 400px;
+}
+main{
+    /* display: flex; */
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: aliceblue;
+}
+.mainForm{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    border: 2px solid gray;
+    margin: 20px;
+    font-size: 20px;
+    background-color: azure;
+    /* width: 800px; */
+}
+/* .formHead{
+    width: 100%;
+} */
+.mainForm > div{
+    flex-basis: 50%;
+    padding: 10px;
+}
+/* .mainForm > div > input{
+    margin-left: 20%;
+}  */
+.head{
+    text-align: center;
+}
+/* .buttonDiv{
+    text-align: center;
+} */
+.courseDiv{
+    margin-left: 10%;
+    gap: 50px;
+}
+table{
+    width: 400px;
+}
+table, tr, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+.gridContainer{
+    display: grid;
+    width: 700px;
+    grid-template-columns:repeat(2, 1fr);
+}
+.gridItem{
+    border: 1px solid black;
+    width: 300px;
+    color: white;
+    background-color: rgb(12, 171, 12);
+}
