@@ -22,8 +22,7 @@
     grid-row-start: 2;
     grid-row-end: 5;
     height: 285px;
-    /* grid-column-start: 1; */
-    /* grid-column-end: ; */
+    
 }
 .gridItem3{
     height: 100px;
