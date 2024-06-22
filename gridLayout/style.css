@@ -10,7 +10,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 300px; */
 }
 .gridItem1{
     height: 75px;
