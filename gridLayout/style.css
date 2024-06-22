@@ -1,7 +1,5 @@
 .gridContainer{
     display: grid;
-    /* border: 2px solid black; */
-    /* height: 400px; */
     width: 60%;
     /* grid-template-columns: 1fr 1fr 1fr; */
     gap: 1px 1px;
