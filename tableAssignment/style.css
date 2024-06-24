@@ -1,0 +1,28 @@
+table{
+    width: 600px;
+    height: 350px;
+
+    margin: auto;
+    border-collapse: collapse;      
+}
+thead{
+    height: 10%;
+    background-color: yellow;
+}
+.dayHead{
+    background-color: yellow;
+}
+table, th, td{
+    border: 1px solid black;
+}
+.home{
+    background-color: lightpink;
+}
+td{
+   text-align: center;
+   width: 15%; 
+}
+.timeCol{
+    background-color: rgb(197, 195, 195);
+    width: 10%;
+}
