@@ -77,12 +77,12 @@ table, tr, td, th{
 }
 .gridContainer{
     display: grid;
-    width: 700px;
+    /* width: 700px; */
     grid-template-columns:repeat(2, 1fr);
 }
 .gridItem{
     border: 1px solid black;
-    width: 300px;
+    /* width: 300px; */
     color: white;
     background-color: rgb(12, 171, 12);
 }
