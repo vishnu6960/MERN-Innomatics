@@ -10,7 +10,7 @@ p {
 
 img{
     display: block;
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 ul{
     display: flex;
@@ -22,10 +22,37 @@ li{
     flex-basis: 100px;
 }
 img{
-    max-width: 100%;
+    width: 300px;
+    max-height: 200px;
 }
+/* .image img{
+    width: 500px;
+} */
+ p{
+    width: 300px;
+ }
 
 .container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)); */
+    display: flex;
+    flex-wrap: wrap;
+}
+.container > div{
+    flex-grow: 1;
+}
+.container > div > img{
+    flex-grow: 1;
+}
+p{
+    flex-grow: 1;
+}
+@media(max-width:600px){
+
+    img{
+        width: 100%;
+    }
+    .container{
+        flex-direction: column;
+    }
 }

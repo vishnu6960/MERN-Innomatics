@@ -1,0 +1,22 @@
+body{
+    background-color: chocolate;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    border: 1px solid black;
+    margin: 10px;
+    height: 100px;
+    /* flex-basis: 25%; */
+    flex-grow: 1;
+    /* flex-shrink: 2; */
+}
+
+@media(max-width:800px){
+
+    .container{
+        flex-direction: column;
+    }
+}
