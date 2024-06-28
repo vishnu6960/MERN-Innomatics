@@ -1,0 +1,7 @@
+.mainContainer{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+aside{
+    max-width: 100%;
+}
