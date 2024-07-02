@@ -1,0 +1,78 @@
+.mainContainer{
+    display: flex;
+    /* flex-direction: column; */
+}
+.loader{
+    border: 15px solid grey;
+    border-top: 15px solid yellow;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes  spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.square{
+    /* margin-left: 200px; */
+    border: 1px solid black;
+    /* position: absolute;
+    top: 10%;
+    left: 20%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+}
+.circle{
+    border: 1px solid black;
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+}
+.modalButton > button{
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: center; */
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    /* right: 50%; */
+    /* top: 50%; */
+}
+.carouselContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 600px; */
+    /* position: absolute;
+    right: 0;
+    top: 12%; */
+}
+.slide{
+    height: 360px;
+    width: 640px;
+}
+.carousel-item img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+aside{
+    border: 1px solid black;
+    width: 200px;
+    height: 500px;
+    overflow: auto;
+}
+
+h2{
+    background-color: gold;
+    position: sticky;
+    top: 0;
+}
