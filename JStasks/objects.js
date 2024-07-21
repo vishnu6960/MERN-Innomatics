@@ -48,7 +48,7 @@ console.log(person)
 //Accessing Object Properties
 console.log(person.address.city)
 
-//
+//Arrow Functions
 let greet = (name)=>{
     return name
 }
