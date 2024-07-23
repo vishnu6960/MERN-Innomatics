@@ -1,30 +1,95 @@
-let s1 = {
-    name:"vishnu",
-    age:"21",
-    number:939494,
-    address:{
-        pincode:514434,
-        city:"Hyderabad"
+let students = [
+    {
+        name:"vishnu",
+        age:"21",
+        number:9394233394,
+        email:"vishnu@gmail.com",
+        address:{
+            pincode:514434,
+            city:"Hyderabad"
+        },
+        supplies:['JAVA', 'ED', 'DS']
     },
-    arr:[1,2,3,4,5]
-}
+    {
+        name:"Gajal",
+        age:"21",
+        number:2344409833,
+        email:"gajal@gmail.com",
+        address:{
+            pincode: 543213,
+            city:"Banglore"
+        },
+        supplies:['CHEMISTRY', 'PHYSICS', 'BEE']
+    },
+    {
+        name:"Anil",
+        age:"24",
+        number:2344400933,
+        email:"anil@gmail.com",
+        address:{
+            pincode: 540913,
+            city:"kolkata"
+        },
+        supplies:['M2', 'DBMS', 'JAVA']
+    },
+    {
+        name:"Abhi",
+        age:"22",
+        number:2344407833,
+        email:"abhi@gmail.com",
+        address:{
+            pincode: 540013,
+            city:"Vijayawada"
+        },
+        supplies:['ED', 'M1', 'ADS']
+    },
+    {
+        name:"charan",
+        age:"23",
+        number:2388809833,
+        email:"charan@gmail.com",
+        address:{
+            pincode: 543413,
+            city:"Mumbai"
+        },
+        supplies:['BEE', 'CN', 'DSA']
+    }
+]
 
-let s2 = {
-    name:"Gaja;",
-    age:"21",
-    number:2344433,
-    'email id':"vishnu@g.com"
-}
-console.log(s1.address.city)
+let changedStudents = students.map((item, index) => {
+    let updatedObj = {...item}
+    if(item.name == "charan"){
+        item.supplies.shift()
+        item.supplies.pop()
+    }
+    if(item.name == "vishnu"){
+        item.supplies.push('FLAT')
+    }
+    if(item.name == "Abhi"){
+        item.supplies.unshift('MEFA')
+    }
+    if(item.name == "Gajal"){
+        item.supplies.splice(1, 0, 'MATHS')
+    }
+    if(item.name == "Anil"){
+        item.supplies.splice(1, 1, "C")
+    }
+    return updatedObj
+})
+console.log(JSON.stringify(students))
+console.log(JSON.stringify(changedStudents))
 
-let arr = [1, 2, 3, 4, 5]
-// arr.push(10).unshift(0)
-// console.log(arr)
-let splice = arr.splice(1, 2)
-console.log(arr)
 
-let str = "Vishnu Usha Charan"
-console.log(str.split().join(""))
-// arr.map(item=>console.log(item))
+
+
+
+
+
+
+
+
+
+
+
 
 
