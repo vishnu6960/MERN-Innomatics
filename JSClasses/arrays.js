@@ -76,8 +76,14 @@ let changedStudents = students.map((item, index) => {
     }
     return updatedObj
 })
-console.log(JSON.stringify(students))
-console.log(JSON.stringify(changedStudents))
+// console.log(JSON.stringify(students))
+// console.log(JSON.stringify(changedStudents))
+
+
+let arr = new Array(30).fill(0)
+let sum = new Array(30).fill(1).map((item, index) => index+1)
+            .reduce((acc, iter) => iter%2 === 0? acc+iter:acc+0, 0)
+console.log(sum)
 
 
 
