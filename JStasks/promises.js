@@ -1,6 +1,6 @@
 //1. Creating Promises
 function asyncTask(name, delay, shouldReject){
-    console.log(delay)
+    // console.log(delay)
     return new Promise((res, rej)=>{
         if(shouldReject){
                 rej(`${name} failed`)
