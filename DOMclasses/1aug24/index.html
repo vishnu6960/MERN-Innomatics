@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">Good Morning</h1>
+    <button id="btn">click me</button>
+</body>
+<script>
+    let btn = document.getElementById("btn")
+    btn.style.backgroundColor = "yellow"
+    console.log(btn)
+    document.getElementById("head").innerHTML = "Good Night"
+    btn.addEventListener("click", change)
+    var c = 0
+    function change(){
+        if(c % 2 == 0){
+            document.body.style.backgroundColor = "black"
+        }
+        else{
+            document.body.style.backgroundColor = "white"
+        }
+        c++
+    }
+</script>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Selectors</title>
+</head>
+<body>
+    <div id="firstElement">Select Element by Id</div>
+    <h2 class="multipleClass">Select Elements By class name</h2>
+    <h4 class="multipleClass">Select Elements By class name</h4>
+    <h6  class="multipleClass">Select Elements By class name</h6>
+    <a href="">click me</a>
+    <a href="">select elements by tag name</a>
+    <a href="">selecting multiple elements by same tag name</a>
+
+    <div>
+        <p>query Selector</p>
+        <p>query Selector</p>
+        <p>query Selector</p>
+    </div>
+
+    <div>
+        <span class="item">Query Selector All Elements</span>
+        <span class="item">Query Selector All Elements</span>
+        <span class="item">Query Selector All Elements</span>
+        <span class="item">Query Selector All Elements</span>
+    </div>
+
+    <div id="uniqueDiv">
+        <h3>My favourite place is</h3>
+        <h2 id="place"><strong id="strong">Ladakh</strong> in India</h2>
+    </div>
+
+</body>
+
+<script>
+    //1.select element by ID
+    let firstElement = document.getElementById("firstElement")
+    firstElement.style.backgroundColor = "red"
+    firstElement.style.fontSize = "50px"
+
+    //2.select elements by class name
+    let classElements = document.getElementsByClassName("multipleClass")
+    // console.log(classElements)
+    for(let i = 0;i < classElements.length;i++){
+        classElements[i].style.color = "blue"
+    }
+    
+    //3.select Elements by tag name
+    let tagElements = document.getElementsByTagName("a")
+    for(let i = 0;i < tagElements.length;i++){
+        tagElements[i].style.border = "2px solid black"
+        tagElements[i].style.textDecoration = 'none'
+        tagElements[i].style.fontSize = "20px"
+    }
+
+    //4.Select Element by Query Selector
+    let querySel = document.querySelector('p')
+    querySel.style.fontStyle = "italic"
+    querySel.style.fontSize = "25px"
+
+    //5.select Elements by Query Selector all
+    let querySelAll = document.querySelectorAll(".item")
+    console.log(querySelAll)
+    for(let i = 0;i < querySelAll.length;i++){
+        querySelAll[i].style.margin = "30px"
+        //  console.log(querySelAll[i]);
+    }
+
+    //6.Change style of Selected Elements
+    document.getElementById('strong').style.fontStyle = 'italic'
+    let unique = document.getElementById("uniqueDiv")
+    unique.style.border = "2px solid red"
+    unique.style.backgroundColor = 'blue'
+    unique.style.textAlign = 'center'
+    document.getElementById("place").style.color = "yellow"
+    
+</script>
+</html>
