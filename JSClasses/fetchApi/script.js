@@ -28,6 +28,7 @@ let dataObject = [
 window.addEventListener("load", ()=>{
     console.log("window")
 })
+//It will execute all the html code completed
 document.addEventListener('DOMContentLoaded', ()=>{
     let tbody = document.getElementById("tbody")
 
