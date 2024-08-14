@@ -1,0 +1,31 @@
+#mainDiv{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+}
+form{
+    border: 1px solid black;
+}
+form > div{
+    padding: 15px;
+}
+button{
+    color: white;
+    background-color: green;
+}
+#cardsContainer {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+#cardsContainer div {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    /* transition: transform 0.3s ease; */
+}
+#cardsContainer div:hover{
+    translate: translateY(-5px);
+}
+
