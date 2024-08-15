@@ -1,3 +1,25 @@
+let addItems = (dataObject)=>{
+    let card = document.createElement("div")
+    card.className = 'cardEle'
+    card.innerHTML = `
+        <p><strong>Title :</strong> ${dataObject.title}</p>
+        <p><strong>Description :</strong> ${dataObject.descr}</p>
+        <p><strong>Category :</strong> ${dataObject.category}</p>
+        <p><strong>Priority :</strong> ${dataObject.priority}</p>
+        <button class="deleteButton">Delete</button>
+    `
+    cardsContainer.appendChild(card)
+    let del = card.querySelector('.deleteButton');
+    del.addEventListener('click', () => {
+        card.remove();
+        let index = todos.indexOf(dataObject);
+        if (index !== -1) {
+            todos.splice(index, 1);
+        }
+        localStorage.setItem('todos', JSON.stringify(todos));
+    });
+}
+// localStorage.clear() 
 let cardsContainer = document.getElementById("cardsContainer")
 let todos = []
 document.getElementById("addTask").addEventListener("click", (e)=>{
@@ -17,8 +39,7 @@ document.getElementById("addTask").addEventListener("click", (e)=>{
     todos.push(object)
     localStorage.setItem('todos', JSON.stringify(todos))
 
-    document.getElementById("formData").reset()
-    
+    document.getElementById("formData").reset() 
 })
 
 
@@ -26,43 +47,14 @@ document.getElementById("addTask").addEventListener("click", (e)=>{
 document.addEventListener('DOMContentLoaded', ()=>{
     if(localStorage.getItem("todos")){
         todos = JSON.parse(localStorage.getItem('todos'))
-        console.log(todos)
+        // console.log(todos)
         todos.forEach(item =>{
             addItems(item)
         })
     }
 })
 
-let addItems = (dataObject)=>{
-    let card = document.createElement("div")
-    card.className = 'cardEle'
-    card.innerHTML = `
-        <p><strong>Title :</strong> ${dataObject.title}</p>
-        <p><strong>Description :</strong> ${dataObject.descr}</p>
-        <p><strong>Category :</strong> ${dataObject.category}</p>
-        <p><strong>Priority :</strong> ${dataObject.priority}</p>
-        <button class="deleteButton">Delete</button>
-    `
-    cardsContainer.appendChild(card)
 
-    let cards = document.querySelectorAll(".cardEle")
-    // console.log(cards)
-    cards.forEach(item => {
-        let del = item.querySelector('.deleteButton')
-        del.addEventListener('click', ()=>{
-            // localStorage.removeItem(todos[0])
-            console.log(todos[0])
-            item.remove()
-            // let index = todos.indexOf(dataObject)
-            // if(index != -1){
-            //     todos.splice(index, 1)
-            // }
-            // localStorage.setItem('todos', JSON.stringify(todos))
-        })
-        // console.log(todos)
-    })
-}
-// localStorage.clear() 
 
 
 
