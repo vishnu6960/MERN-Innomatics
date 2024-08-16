@@ -13,9 +13,11 @@ body{
     justify-content: center;
 }
 form{
+    margin: 10px;
     background-color: #f4f4f4;
     border: 1px solid black;
-    border-color: #ddd;
+    border-color: #0e0a0a;
+    border-radius: 5px;
     width: 30%;
 }
 #title{
