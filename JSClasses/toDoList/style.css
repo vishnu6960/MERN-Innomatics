@@ -35,15 +35,26 @@ button{
     color: white;
     background-color: green;
 }
+.deleteButton{
+    position: absolute;
+    left: 35%;
+    /* right: 50%; */
+    bottom: 5px;
+}
 #cardsContainer {
+    
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 #cardsContainer div {
+    position: relative;
     border: 1px solid #ddd;
     /* border-color: #ddd; */
+    /* display: flex;
+    flex-direction: column; */
+    /* flex-wrap: wrap; */
     border-radius: 5px;
     padding: 20px;
     margin-top: 5px;

@@ -2,15 +2,13 @@ console.log('Start');
 
 async function asyncFunc() {
   console.log('Inside asyncFunc');
-  await Promise.resolve().then(()=>{
-    console.log("vishnu")
-  });
+  await Promise.resolve();
   console.log('After await in asyncFunc');
 }
 
-asyncFunc()
-//   console.log('asyncFunc resolved');
-// });
+asyncFunc().then(() => {
+  console.log('asyncFunc resolved');
+});
 
 Promise.resolve().then(() => {
   console.log('Promise 1');
