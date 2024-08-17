@@ -22,7 +22,7 @@ let addItems = (dataObject)=>{
         localStorage.setItem('todos', JSON.stringify(todos));
     });
 
-    //title edit and updation
+    //title edit and updations
     document.querySelectorAll(".cardEle").forEach((item, index) =>{
         console.log(item)
         let titleElement = item.querySelector(".title")
