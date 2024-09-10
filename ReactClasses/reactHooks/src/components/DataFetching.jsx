@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react"
 import axios from "axios";
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './DataFetching.css'
+import ConditionalRendering from "./conditionalRendering";
 
 function DataFetching(){
-    const [data, setData] = useState([])
+    const [data, setData] = useState(null)
     const [loading, setLoading] = useState(true)
 
     useEffect(()=>{
@@ -25,13 +27,19 @@ function DataFetching(){
 
     if(loading) return <h2>Loading...</h2>
     return (
-        <div>
+        <>
+
+        <ConditionalRendering />
+
+
+        <div className="d-flex flex-wrap gap-3">
+            
             {/* <ul>
                 {data.map((post) =>(
                     <li key={post.id}>{post.title}</li>
                 ))}
             </ul> */}
-            <table>
+            {/* <table>
                 <thead>
                     <th>Id</th>
                     <th>Title</th>
@@ -50,8 +58,23 @@ function DataFetching(){
                         </tr>
                     ))}
                 </tbody>
-            </table>
+            </table> */}
+
+            {data.map((item) =>(
+                 <div className="card" style={{width:"18rem"}}>
+                    <img src={item.image} className="card-img-top" alt={item.title}/>
+                    <div className="card-body">
+                        <h5 className="card-title">{item.title}</h5>
+                        <p className="card-text">Price : {item.price}</p>
+                        <a href="#" className="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            ))}
+
         </div>
+
+        </>
+        
     )
 }
 
