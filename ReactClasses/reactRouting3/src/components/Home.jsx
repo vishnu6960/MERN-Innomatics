@@ -5,7 +5,7 @@ const Home = () => {
     const products = [
         {id : 1, name : "Laptop", category : "Electronics"},
         {id : 2, name : "Mobile", category : "Electronics"},
-        {id : 3, name : "Shirts", category : "Clothing"},
+        {id : 3, name : "Pants", category : "Clothing"},
         {id : 4, name : "Shoes", category : "Clothing"},
         {id : 5, name : "Speaker", category : "Electronics"}
 
