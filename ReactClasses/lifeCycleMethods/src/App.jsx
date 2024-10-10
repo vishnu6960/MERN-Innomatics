@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import DataFetcher from "./components/DataFetcher";
+import './App.css';
 
 class App extends Component{
   render(){
