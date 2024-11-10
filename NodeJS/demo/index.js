@@ -11,14 +11,15 @@ const fs = require('fs')
 
 // fs.writeFile("./demo.txt", "Hello Nodejs", () =>{})
 
-fs.readFile("./demo.txt", "utf-8", (err, res) =>{
-    if(err){
+fs.readFile("./demo.txt", "utf-8", (err, res) => {
+    if (err) {
         console.log("Error:", err)
     }
-    else{
+
+    else {
         console.log(res)
     }
-} )
+})
 
 // fs.appendFileSync("./test.html", "This is Backend Cls")
 
