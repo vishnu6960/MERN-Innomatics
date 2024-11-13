@@ -5,7 +5,9 @@ const users = data.users
 exports.create = (req, res) => {
     console.log(req.body)
     users.push(req.body)
-    res.json(req.body)
+    // res.json(req.body)
+    res.status(201).json(req.body)
+
 }
 
 exports.getAll = (req, res) => {
@@ -16,7 +18,12 @@ exports.get = (req, res) => {
     // res.json(users)
     const id = req.params.id
     const user = users.find(u => u.id == id)
+    if(!user){
+        res.status(404).json({message: "not found"})
+    }
+    else{
     res.status(200).json(user)
+    }
 }
 
 exports.replace = (req, res) => {
