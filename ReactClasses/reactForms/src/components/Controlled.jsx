@@ -1,26 +1,27 @@
-import { useState } from "react"
+import { useState, useRef } from "react"
+import React from "react"
+
 
 const Controlled = () =>{
 
+    const personName = useRef()
+
     const [name, setName] = useState("")
 
-
-    const handleChange = (e) =>{
-        setName(e.target.value)
-    }
-
-    const handleSubmit = () =>{
-        alert(`Your name is ${name} in controlled form`)
+    const handleSubmit = (e) =>{
+        e.preventDefault()
+        setName(personName.current.value)
     }
     return(
         <>
             <form onSubmit={handleSubmit}>
                 <label>
-                    Name : 
-                    <input type="text" value = {name} onChange={handleChange} />
+                    Name :
+                    <input type="text" ref={personName}  />
                 </label>
                 <button type="submit">Submit</button>
             </form>
+            <h1>{name}</h1>
         </>
     )
 }

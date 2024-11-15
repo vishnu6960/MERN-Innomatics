@@ -1,8 +1,10 @@
 import { useRef } from "react"
+import React from "react"
+
 
 const Uncontrolled = () =>{
 
-    const inputRef = useRef(null    )
+    const inputRef = useRef(null)
     const handleSubmit = (e) =>{
         e.preventDefault()
         alert(`Your name is ${inputRef.current.value} in uncontrolled form`)
