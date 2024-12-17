@@ -20,6 +20,11 @@ app.delete("/users", (req, res) => {
 
 app.use('/static', express.static('public'))
 
+app.use((req, res, next) => {
+    console.log(`${req.method} is running for ${req.url}`)
+    next()
+})
+
 app.listen(PORT, () => {
     console.log(`app is running on ${PORT}`)
 })
