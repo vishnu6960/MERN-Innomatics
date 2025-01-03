@@ -1,23 +1,23 @@
-import { ThemeProvider } from './components/ThemeProvider'
+// import { ThemeProvider } from './components/ThemeProvider'
 import React from 'react'
-import ThemeChanger from './components/ThemeChanger'
-import ThemeUpdater from './components/ThemeUpdater'
-// import { UserProvider } from './UserProvider'
-// import UserProfile from './UserProfile'
-// import UpdateUser from './UpdateUser'
+// import ThemeChanger from './components/ThemeChanger'
+// import ThemeUpdater from './components/ThemeUpdater'
+import { UserProvider } from './UserProvider'
+import UserProfile from './UserProfile'
+import UpdateUser from './UpdateUser'
 
 const App = () => {
   return (
     <div>
-      {/* <UserProvider>
+      <UserProvider>
         <UserProfile />
         <UpdateUser />
-      </UserProvider> */}
+      </UserProvider>
 
-      <ThemeProvider>
+      {/* <ThemeProvider>
         <ThemeChanger />
         <ThemeUpdater />
-      </ThemeProvider>
+      </ThemeProvider> */}
     </div>
   )
 }
